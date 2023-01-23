@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+
+p {
+  border: 1px solid black;
+  background-color: #a52a2a;
+  height: 95%;
+  padding: 15px;
+  width: 100%;
+  font-family: Helvetica;
+  color: white;
+  overflow: hidden;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+p span{
+  color: black;
+  display: flex;
+  font-size: 18px;
+  font-weight: bolder;
+  justify-content: center;
+}
+
+.nav-1 {
+  background-color: lightslategray;
+}
+#menu {
+  background-color: #a52a2a;
+  color: black;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.icon-bar {
+  background-color: black;
+}
+#collapsable-nav{
+  position: relative;
+  top: -10px;
+}
+#collapsable-nav span{
+  position: relative;
+  left: 50%;
+  color: darkviolet ;
+  font-size: 17px;
+}
+
+
+#collapsable-nav a{
+  border: 2px solid black;
+  display: block;
+}
+
+.con-1 {
+  position: relative;
+  top: 40px;
+}
+.title {
+  position: relative;
+  text-align: center;
+  top: 10px;
+  font-weight: bold;
+}
+header{
+  border: 2px solid black;
+}
+.box {
+  height: 100px;
+  width: 100%;
+}
+.col-lg-4s,
+.col-lg-6s,
+.col-lg-8s {
+  margin: auto;
+  height: 400px;
+  width: 96%;
+}
+.navbar h1 {
+  text-align: center;
+  color: darkblue;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  .col-lg-4s,
+  .col-lg-6s,
+  .col-lg-8s {
+    width: 96%;
+  }
+ 
+  #collapsable-nav {
+    position: relative;
+    left: 0%;
+  }
+  #collapsable-nav a{
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .col-lg-4s,
+  .col-lg-6s,
+  .col-lg-8s {
+    width: 92%;
+  }
+  .nav-1 {
+    height: 80px;
+  }
+  #collapsable-nav {
+    position: relative;
+    left: 5%;
+  }
+  #collapsable-nav a{
+    display: none;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 769px) {
+  .col-lg-4s,
+  .col-lg-6s,
+  .col-lg-8s {
+    width: 76%;
+  }
+  .nav-1 {
+    height: 80px;
+  }
+  .navbar h1 {
+    text-align: left;
+    margin: 17px;
+  }
+  #content{
+    position: absolute;
+    top: 20%;
+  }
+}
